@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { Loader2, Heart } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const Auth = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -74,8 +75,8 @@ const Auth = () => {
         {/* Logo/Header */}
         <div className="text-center space-y-2">
           <div className="flex justify-center mb-4">
-            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-soft">
-              <Heart className="w-8 h-8 text-white" fill="currentColor" />
+            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-soft overflow-hidden">
+              <img src={logo} alt="TGLW logo" className="w-12 h-12 object-cover" />
             </div>
           </div>
           <h1 className="text-3xl font-bold text-foreground">TGLW Global</h1>
