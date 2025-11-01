@@ -208,12 +208,12 @@ const Dashboard = () => {
 
             {isAdmin && (
               <Button
-                variant="outline"
-                className="h-24 flex-col gap-2 col-span-2 bg-primary/5"
+                variant="default"
+                className="h-24 flex-col gap-2 col-span-2 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-lg hover:shadow-xl transition-all"
                 onClick={() => navigate("/admin")}
               >
                 <Shield className="w-8 h-8" />
-                <span>Admin Panel</span>
+                <span>Admin Dashboard</span>
               </Button>
             )}
           </div>
